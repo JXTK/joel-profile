@@ -2,24 +2,33 @@
 <html lang="en">
   <head>
     <title>{{ settings.metaTitle }}</title>
-    
+
     {{> head }}
-    
+
     <!--- THEMES: in settings.json change 'glitch' to 'gallery', 'menu', or any other theme in the layout/themes folder --->
-    <link rel="stylesheet" type="text/css" href="/styles/themes/{{settings.theme}}.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/styles/themes/{{settings.theme}}.css"
+    />
   </head>
   <body>
     <main>
       <div class="wrapper">
         <div class="content">
-          
-          {{> avatar }} 
-          {{> name }}
+          {{> avatar }} {{> name }}
 
           <p>
-            Hi! I am Joel, currently a high-school student at DPS Pune.
+            Hi! I am Joel, currently a high-school student at DPS Pune. I am a
+            front-end web developer and learning backend. I have worked in
+            Execute Big as an intern for 5 months. I am also a pythonista, and have
+            worked on data visualization. Apart from this, I am also an AI/ML enthusiast
+            and make custom Discord bots. 
           </p>
           
+          <p>
+            My hobbies include listening to music, gaming and swimming.  
+          </p>
 
           <!--- NEXT STEPS: Easy, responsive YouTube/iframe embeds? We've got a helper for that:
           <div class="video-wrapper__16-9">
@@ -27,13 +36,12 @@
           </div>
           --->
 
-          {{> links }} 
-          
+          {{> links }}
         </div>
       </div>
 
       {{> social }}
-      
+
       <!--- FOOTER: You can safely remove the Glitch footer (but tell your friends!) ✂ --->
       {{> glitch-footer }}
     </main>
