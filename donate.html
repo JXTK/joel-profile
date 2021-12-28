@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ settings.metaTitle }}</title>
+
+    {{> head }}
+
+    <!--- THEMES: in settings.json change 'glitch' to 'gallery', 'menu', or any other theme in the layout/themes folder --->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/styles/themes/{{settings.theme}}.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="content">
+          {{> avatar }} {{> name }}
+
+          <font face="Inconsolata"> <p align="justify">
+            You can support me with the following cryptocurrencies:
+            <table>
+              <tr>
+                <th> Crypto Name</th>
+                <th> My Address </th>
+                <th> QR Code (If any) </th>
+              </tr>
+              <tr>
+                <td> Bitcoin ($BTC) </td>
+                <td> 3Qee3MWDJg5akE87sjTdhQgjow8wm6rhx8 </td>
+                <td> </td>
+              </tr>
+            </table>
+          </p> </font>
+
+        </div>
+      </div>
+
+      <a href="https://shore-chatter-lantana.glitch.me/"> Back to home page </a>
+
+      <!--- FOOTER: You can safely remove the Glitch footer (but tell your friends!) ✂ --->
+      {{> glitch-footer }}
+    </main>
+  </body>
+</html>
